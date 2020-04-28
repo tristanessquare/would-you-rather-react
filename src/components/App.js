@@ -9,7 +9,6 @@ import LeaderBoard from "./LeaderBoard"
 import Logout from "./Logout"
 import connect from "react-redux/lib/connect/connect"
 import {handleInitialData} from "../actions/shared"
-import '../styles/App.css'
 
 class App extends Component {
 

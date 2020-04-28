@@ -1,8 +1,7 @@
 import React, {Component, Fragment} from 'react';
-import Question from "./Question"
 import connect from "react-redux/lib/connect/connect"
 import {hasUserAnswered} from "../utils/helpers"
-import '../styles/QuestionOverview.css'
+import QuestionOverviewItem from "./QuestionOverviewItem"
 
 const UNANSWERED_TAB = 'UNANSWERED_TAB'
 const ANSWERED_TAB = 'ANSWERED_TAB'
@@ -31,7 +30,7 @@ class QuestionOverview extends Component {
 
               {questionIds.length !== 0 &&
               <div className="tabcontent">
-                {questionIds.map(questionId => <Question key={questionId} questionId={questionId}/>)}
+                {questionIds.map(questionId => <QuestionOverviewItem key={questionId} questionId={questionId}/>)}
               </div>
               }
 
