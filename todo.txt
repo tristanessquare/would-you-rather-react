@@ -1,0 +1,5 @@
+* handle 404
+* implement login component
+* add icon to nav
+* logout logic
+* privateRoutes (automatic redirect to /login and back to desired url)
