@@ -196,7 +196,7 @@ li.right {
     margin-bottom: 20px;
 }
 
-.result-option .subtitle {
+.bold {
     font-weight: bold;
 }
 
@@ -231,11 +231,19 @@ li.right {
     padding-left: 10px;
 }
 
-.leaderboard-item .title {
+.title {
     font-weight: bold;
     margin-bottom: 15px;
 }
 
 .leaderboard-item .counts {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }

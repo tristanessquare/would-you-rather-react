@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="945c79d5-78c2-4c6e-8425-17ce987215ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LeaderBoardItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/QuestionOverviewItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/QuestionResult.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/questions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeaderBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeaderBoard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuestionDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuestionDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuestionOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuestionOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuestionResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuestionResult.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/questions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Nav.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Question.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/QuestionOverview.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/helpers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +116,7 @@
       <workItem from="1587974893436" duration="8462000" />
       <workItem from="1587984978891" duration="1221000" />
       <workItem from="1587986223566" duration="943000" />
-      <workItem from="1587996836635" duration="23568000" />
+      <workItem from="1587996836635" duration="30586000" />
     </task>
     <servers />
   </component>
@@ -140,10 +128,10 @@
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1522" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3840.-58.1920.1057/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1588022411175" />
-    <state x="-1820" y="123" width="1720" height="857" key="DiffContextDialog" timestamp="1588057337102">
+    <state x="-1820" y="123" width="1720" height="857" key="DiffContextDialog" timestamp="1588083929714">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1820" y="123" width="1720" height="857" key="DiffContextDialog/-3840.-58.1920.1057/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1588057337102" />
+    <state x="-1820" y="123" width="1720" height="857" key="DiffContextDialog/-3840.-58.1920.1057/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1588083929714" />
     <state width="1878" height="358" key="GridCell.Tab.0.bottom" timestamp="1588060894865">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
@@ -196,10 +184,10 @@
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1239" y="292" key="VcsDiffUtil.ChangesDialog/-3840.-58.1920.1057/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1588057090643" />
-    <state x="-1253" y="308" width="586" height="538" key="find.popup" timestamp="1588057909243">
+    <state x="-1253" y="308" width="586" height="538" key="find.popup" timestamp="1588078529961">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1253" y="308" width="586" height="538" key="find.popup/-3840.-58.1920.1057/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1588057909243" />
+    <state x="-1253" y="308" width="586" height="538" key="find.popup/-3840.-58.1920.1057/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1588078529961" />
     <state width="554" height="216" key="javadoc.popup.new" timestamp="1587983634232">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>

@@ -23,7 +23,7 @@ class QuestionResult extends Component {
             <div className="bar-container">
               <div className="bar" style={{width: `${optionOnePercent}%`}}/>
             </div>
-            <div className="subtitle">{`${votesOptionOne} out of ${allVotes}`}</div>
+            <div className="bold">{`${votesOptionOne} out of ${allVotes}`}</div>
           </div>
 
           <div className="result-option">
@@ -31,7 +31,7 @@ class QuestionResult extends Component {
             <div className="bar-container">
               <div className="bar" style={{width: `${optionTwoPercent}%`}}/>
             </div>
-            <div className="subtitle">{`${votesOptionTwo} out of ${allVotes}`}</div>
+            <div className="bold">{`${votesOptionTwo} out of ${allVotes}`}</div>
           </div>
         </div>
       </div>
