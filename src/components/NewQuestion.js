@@ -27,13 +27,9 @@ class NewQuestion extends Component {
     event.preventDefault();
 
     const {optionOneText, optionTwoText} = this.state;
-    const {author} = this.props;
+    const {authedUser} = this.props;
 
-    this.props.dispatch(handleCreateQuestion({
-      optionOneText,
-      optionTwoText,
-      author,
-    }))
+    this.props.dispatch(handleCreateQuestion(optionOneText, optionTwoText, authedUser))
             .then(() => this.clearState())
             .then(() => this.props.history.push("/"));
   }
@@ -45,7 +41,7 @@ class NewQuestion extends Component {
       </div>
       <div className="card-body">
 
-        <div>
+        <div className="label">
           Complete the question:
         </div>
         <div className="bold">

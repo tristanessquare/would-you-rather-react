@@ -19,7 +19,13 @@ function answerQuestion(answerInfo) {
   }
 }
 
-export function handleAnswerQuestion(answerInfo) {
+export function handleAnswerQuestion(questionId, answer, authedUser) {
+  const answerInfo = {
+    authedUser: authedUser,
+    qid: questionId,
+    answer,
+  }
+  
   return (dispatch) => {
     saveQuestionAnswer(answerInfo)
             .then(() => dispatch(answerQuestion(answerInfo)))
@@ -33,9 +39,13 @@ function createQuestion(question) {
   }
 }
 
-export function handleCreateQuestion(createQuestionInfo) {
+export function handleCreateQuestion(optionOneText, optionTwoText, author) {
   return (dispatch) => {
-    return saveQuestion(createQuestionInfo)
+    return saveQuestion({
+      optionOneText,
+      optionTwoText,
+      author
+    })
             .then((question) => {
               dispatch(createQuestion(question))
             })

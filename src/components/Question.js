@@ -17,12 +17,10 @@ class Question extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    this.props.dispatch(handleAnswerQuestion(
-            {
-              authedUser: this.props.authedUser,
-              qid: this.props.questionId,
-              answer: this.state.selectedOption
-            }));
+    const {dispatch, authedUser, questionId} = this.props;
+    const {selectedOption} = this.state;
+
+    dispatch(handleAnswerQuestion(questionId, selectedOption, authedUser));
   }
 
   render() {
