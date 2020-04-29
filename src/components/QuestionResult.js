@@ -1,13 +1,12 @@
 import React, {Component, Fragment} from 'react';
 import connect from "react-redux/lib/connect/connect"
+import ResultBar from "./ResultBar"
 
 class QuestionResult extends Component {
   render() {
     const votesOptionOne = this.props.question.optionOne.votes.length;
     const votesOptionTwo = this.props.question.optionTwo.votes.length;
     const allVotes = votesOptionOne + votesOptionTwo;
-    const optionOnePercent = (votesOptionOne / allVotes) * 100;
-    const optionTwoPercent = (votesOptionTwo / allVotes) * 100;
 
     return (<Fragment>
       <div className="card-header">
@@ -18,21 +17,16 @@ class QuestionResult extends Component {
         <div className="right-column">
           <div className="question">Results:</div>
 
-          <div className="result-option">
-            <div className="label">{this.props.question.optionOne.text} {this.props.question.optionOne.votes.includes(this.props.authedUser) ? '(your choiche)' : null}</div>
-            <div className="bar-container">
-              <div className="bar" style={{width: `${optionOnePercent}%`}}/>
-            </div>
-            <div className="bold">{`${votesOptionOne} out of ${allVotes}`}</div>
-          </div>
+          <ResultBar optionText={this.props.question.optionOne.text}
+                     usersChoice={this.props.question.optionOne.votes.includes(this.props.authedUser)}
+                     countOfOptionVotes={votesOptionOne}
+                     countOfallVotes={allVotes}/>
 
-          <div className="result-option">
-            <div className="label">{this.props.question.optionTwo.text} {this.props.question.optionTwo.votes.includes(this.props.authedUser) ? '(your choiche)' : null}</div>
-            <div className="bar-container">
-              <div className="bar" style={{width: `${optionTwoPercent}%`}}/>
-            </div>
-            <div className="bold">{`${votesOptionTwo} out of ${allVotes}`}</div>
-          </div>
+          <ResultBar optionText={this.props.question.optionTwo.text}
+                     usersChoice={this.props.question.optionTwo.votes.includes(this.props.authedUser)}
+                     countOfOptionVotes={votesOptionTwo}
+                     countOfallVotes={allVotes}/>
+
         </div>
       </div>
     </Fragment>);

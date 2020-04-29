@@ -32,7 +32,7 @@ function mapStateToProps({authedUser, questions, users}, props) {
   const question = questions[question_id];
 
   if (!question) {
-    return null
+    return {}
   }
 
   return {

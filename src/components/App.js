@@ -6,10 +6,10 @@ import Login from "./Login"
 import NewQuestion from "./NewQuestion"
 import QuestionDetails from "./QuestionDetails"
 import LeaderBoard from "./LeaderBoard"
-import Logout from "./Logout"
-import connect from "react-redux/lib/connect/connect"
 import {handleInitialData} from "../actions/shared"
 import NotFoundPage from "./NotFoundPage"
+import SecretRoute from "./SecretRoute"
+import connect from "react-redux/lib/connect/connect"
 
 class App extends Component {
 
@@ -20,30 +20,21 @@ class App extends Component {
   render() {
     return (
             <Router>
-              {this.props.loading === true ?
-                      null :
-                      <Fragment>
-                        <Nav/>
-                        <div className="app-container">
-                          <Route path="/" exact component={QuestionOverview}/>
-                          <Route path="/login" component={Login}/>
-                          <Route path="/logout" component={Logout}/>
-                          <Route path="/new" component={NewQuestion}/>
-                          <Route path="/questions/:question_id" component={QuestionDetails}/>
-                          <Route path="/leaderboard" component={LeaderBoard}/>
-                          <Route path="/404" component={NotFoundPage}/>
-                        </div>
-                      </Fragment>
-              }
+              <Fragment>
+                <Nav/>
+                <div className="app-container">
+                    <Route path="/login" component={Login}/>
+                    <SecretRoute path="/" exact innerComp={QuestionOverview}/>
+                    <SecretRoute path="/add" innerComp={NewQuestion}/>
+                    <SecretRoute path="/questions/:question_id" innerComp={QuestionDetails}/>
+                    <SecretRoute path="/leaderboard" innerComp={LeaderBoard}/>
+                    <SecretRoute path="/404" innerComp={NotFoundPage}/>
+                </div>
+              </Fragment>
             </Router>
     );
   }
 }
 
-const mapStateToProps = ({authedUser}) => {
-  return {
-    loading: authedUser === null,
-  }
-}
+export default connect()(App);
 
-export default connect(mapStateToProps)(App);

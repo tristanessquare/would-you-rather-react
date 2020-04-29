@@ -11,7 +11,6 @@ export function receiveQuestions(questions) {
   }
 }
 
-// authedUser, qid, answer
 function answerQuestion(answerInfo) {
   return {
     type: ANSWER_QUESTION,
