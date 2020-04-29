@@ -9,6 +9,7 @@ import LeaderBoard from "./LeaderBoard"
 import Logout from "./Logout"
 import connect from "react-redux/lib/connect/connect"
 import {handleInitialData} from "../actions/shared"
+import NotFoundPage from "./NotFoundPage"
 
 class App extends Component {
 
@@ -30,6 +31,7 @@ class App extends Component {
                           <Route path="/new" component={NewQuestion}/>
                           <Route path="/questions/:question_id" component={QuestionDetails}/>
                           <Route path="/leaderboard" component={LeaderBoard}/>
+                          <Route path="/404" component={NotFoundPage}/>
                         </div>
                       </Fragment>
               }

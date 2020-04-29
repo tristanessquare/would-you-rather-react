@@ -46,7 +46,7 @@ class QuestionOverview extends Component {
 }
 
 const mapStateToProps = ({questions, authedUser}) => {
-  const questionIds = Object.keys(questions);
+  const questionIds = Object.keys(questions).sort((a, b) => questions[b].timestamp - questions[a].timestamp);
   return {
     unansweredQuestionIds: questionIds.filter(questionId => !hasUserAnswered(authedUser, questions[questionId])),
     answeredQuestionIds: questionIds.filter(questionId => hasUserAnswered(authedUser, questions[questionId])),

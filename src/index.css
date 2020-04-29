@@ -251,3 +251,8 @@ input[type="text"] {
 .label {
     margin-bottom: 10px;
 }
+
+.central-title {
+    font-weight: bold;
+    text-align: center;
+}
